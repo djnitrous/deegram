@@ -1,0 +1,46 @@
+{
+  "name": "deegram",
+  "description": "A Telegram bot to download music from Deezer",
+  "logo": "https://telegra.ph/file/6507910fd06d18dfaba82.jpg",
+  "keywords": [
+    "telegram",
+    "deezer"
+  ],
+  "GROUP": "https://t.me/HuBOFMusic",
+  "CHANNEL": "https://t.me/MusicOFHuB",
+  "website": "https://github.com/breakdowns/deegram",
+  "env": {
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "5047271",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "1984834911:AAHU8-XehFzXmWcXc8JH-rxn-o8xh9dNTFk",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Get this value from @BotFather",
+      "value": "1984834911:AAHU8-XehFzXmWcXc8JH-rxn-o8xh9dNTFk",
+      "required": true
+    },
+    "DEEZER_TOKEN": {
+      "description": "Get your API token from Deezer",
+      "value": "dc78503603da4dae255d7844692f0e2d973412e2226f476cf75379cc2e0fe42c0f362e2255e2332c5e0b4a49563663d3169d9af3f14917c2eb85b0170a150534f52f240a766958de73dd987b18989134f4a4bca1eec17e2015ad28eceb0181ec",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Owner Telegram ID",
+      "value": "1451534504",
+      "required": true
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }]
+}
